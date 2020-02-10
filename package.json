@@ -1,0 +1,30 @@
+{
+  "name": "Sindiukova_Evgeniia_Boiko_Olha_Buch_Nitya_Zavizenov_Gleb_Victor_Sonali_Hackathon",
+  "version": "1.0.0",
+  "description": "Ontario Tourism Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-zavizenov/Sindiukova_Evgeniia_Boiko_Olha_Buch_Nitya_Zavizenov_Gleb_Victor_Sonali_Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gleb-zavizenov/Sindiukova_Evgeniia_Boiko_Olha_Buch_Nitya_Zavizenov_Gleb_Victor_Sonali_Hackathon/issues"
+  },
+  "homepage": "https://github.com/gleb-zavizenov/Sindiukova_Evgeniia_Boiko_Olha_Buch_Nitya_Zavizenov_Gleb_Victor_Sonali_Hackathon#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
