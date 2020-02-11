@@ -10,3 +10,16 @@
         margin-bottom: 10px;
     }
 }
+
+// 
+// Styles for tablet version
+// 
+@media screen and (min-width:720px){
+    h2{
+        margin-bottom: 25px;
+    }
+
+    p{
+        margin-bottom: 15px;
+    }
+}

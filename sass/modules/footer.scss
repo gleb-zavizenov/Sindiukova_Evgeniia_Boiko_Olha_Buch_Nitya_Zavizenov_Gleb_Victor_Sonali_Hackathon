@@ -9,6 +9,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    p{
+        margin:none;
+    }
 }
 
 .footer-container{
@@ -27,5 +31,6 @@ footer{
 
     p{
         color: white;
+        margin: none !important;
     }
 }
