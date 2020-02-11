@@ -1,7 +1,9 @@
 <?php
 
 require_once 'load.php';
-require('admin/sign-up.php')
+require('admin/sign-up.php');
+header('Location: index.html');
+exit;
 ?>
 
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 export default{
     template: `
-    <form class="cathedral-form" action="./includes/index.php" method="POST">
+    <form class="cathedral-form" action="index.php" method="POST">
         <label>Your First Name:</label>
         <input type='text' name="first_name" id="first_name" required>
         <label>Your Last Name:</label>
