@@ -39,10 +39,12 @@ function update_db($first_name,$last_name, $email, $country) {
         echo "I sent you an email";
     } else{
         echo "Mail Not Sent";
-      };
+    };
 
 
-
+    // add redirect back to index.html
+    header('Refresh:5; url=../index.html');
+    exit;
        
 
     } else {
@@ -68,8 +70,11 @@ function update_db($first_name,$last_name, $email, $country) {
             echo "I sent you an email";
         } else{
             echo "Mail Not Sent";
-          };
+        };
 
+        // add redirect back to index.html
+        header('Refresh:5; url=../index.html');
+        exit;
     } 
 }
 

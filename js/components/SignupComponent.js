@@ -1,6 +1,6 @@
 export default{
     template: `
-        <form class="cathedral-form" action="./includes/admin/sign-up.php" method="POST">
+        <form class="cathedral-form" action="./includes/index.php" method="POST">
             <label>First Name:</label>
             <input type='text' name="first_name" id="first_name" required>
             <label>Last Name:</label>
