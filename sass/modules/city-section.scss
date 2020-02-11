@@ -35,3 +35,37 @@
         width:100%;
     }
 }
+
+//
+// Styles for desktop version
+// 
+@media screen and (min-width:1200px){
+    .city-section{
+        margin-top:100px;
+    }
+
+    .city-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .city-img{
+        width:50%;
+    }
+
+    .city-desc{
+        width:45%;
+
+        p{
+            margin-bottom: 40px;
+        }
+    }
+
+    .city-section-reverse{
+        .city-container{
+            flex-direction: row-reverse;
+        }
+        
+    }
+}

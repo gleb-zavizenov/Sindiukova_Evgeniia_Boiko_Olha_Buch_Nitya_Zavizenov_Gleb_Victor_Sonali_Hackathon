@@ -15,11 +15,22 @@
 // Styles for tablet version
 // 
 @media screen and (min-width:720px){
-    h2{
-        margin-bottom: 25px;
-    }
+    .welcome-section{
+        h2{
+            margin-bottom: 25px;
+        }
 
-    p{
-        margin-bottom: 15px;
+        p{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// 
+// Stlyes for desktop verison
+// 
+@media screen and (min-width:1200px){
+    .welcome-section{
+        margin-top:50px;
     }
 }

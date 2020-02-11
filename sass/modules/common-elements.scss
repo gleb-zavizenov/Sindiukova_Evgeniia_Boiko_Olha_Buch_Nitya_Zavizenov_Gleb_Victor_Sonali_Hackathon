@@ -35,7 +35,7 @@ h1{
 h2{
     font-family: 'Cookie';
     font-size:40px;
-    color: $green;
+    color: #42554A;
 }
 
 h3{
@@ -66,10 +66,11 @@ p{
     font-weight: 400;
     background-color: transparent;
     transition: 0.7s all ease-in-out;
+    cursor: pointer;
 }
 
 .round-button:hover{
-    background-color: $green;
+    background-color: #42554A;
     border-color:transparent;
 }
 
@@ -104,5 +105,19 @@ p{
         width:200px;
         height: 45px;
         font-size:16px;
+        cursor: pointer;
+    }
+}
+
+// 
+// Styles for desktop version
+// 
+@media screen and (min-width:1200px){
+    .container{
+        width: 1200px;
+    }
+
+    .round-button{
+        cursor: pointer;
     }
 }
