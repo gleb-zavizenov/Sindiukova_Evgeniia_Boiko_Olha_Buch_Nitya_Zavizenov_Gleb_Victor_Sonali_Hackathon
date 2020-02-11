@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Montserrat:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -11,14 +12,136 @@
 </head>
 <body>
     <main id="#app">
-        <header>
-            <a href="">logo</a>
-            <ul class="header-nav"></ul>
-        </header>
-        <body>
-            <h1>This is the body of the page</h1>
-        </body>
-        <footer></footer>
+        <section class="hero-section">
+            <header>
+                <div class="container header-container">
+                    <a class="header-logo" href="/">
+                        <img src="images/logo-white.svg" alt="logo">
+                    </a>
+                    <nav class="header-nav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Promotions</a>
+                        <a href="#">Contacts</a>
+                    </nav>
+                    <div class="nav-burger">
+                        <img src="images/burger.svg" alt="burger icon">
+                    </div>
+                </div>
+            </header>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Find Yourself At Home</h1>
+                    <h3>Ontario Summer</h3>
+                    <a class="round-button" href="">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-line">
+                <img src="images/lines.png" alt="line-overlay">
+            </div>
+            <video autoplay muted loop class="hero-video">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="welcome-section">
+            <div class="container welcome-container">
+                <h2>Welcome to Ontario</h2>
+                <p>The breathtaking views of Ontario's vast wilderness, endless forests and abundant wildlife awaits. 
+                    Ontario is large and green province on the South of Canada. There are 250,000 lakes, 
+                    including the Great Lakes bordering the US
+                </p>
+                <p>The most popular cities in Ontarian region are Toronto or Ottawa. Funsters converge on Toronto's 
+                    vibrant multicultural neighborhoods, where immigrants from far and wide live in “maple” harmony.
+                </p>
+                <p>Whether you want to reconnect with nature or lose yourself in the excitement of the most 
+                    multiculturally diverse and socially cohesive region on Earth. Ontario surprise you with the beauty 
+                    of her scenery and welcome you with the warmth of her people
+                </p>
+            </div>
+        </section>
+        <section class="city-section">
+            <div class="container city-container">
+                <div class="city-img">
+                    <img src="images/toronto1.jpg" alt="Toronto">
+                </div>
+                <div class="city-desc">
+                    <h2>Toronto Downtown</h2>
+                    <p>Tronto’s most prominent attraction 
+                        is the CN Tower, the tallest free-standing 
+                        structure in the western hemisphere and it 
+                        now includes EdgeWalk, a thrilling 
+                        hands-free walk around the outside ledge 
+                        of the tower.</p>
+                    <img src="images/toronto2.jpg" alt="Toronto">
+                </div>
+            </div>
+        </section>
+        <section class="city-section">
+            <div class="container city-container">
+                <div class="city-img">
+                    <img src="images/toronto1.jpg" alt="Toronto">
+                </div>
+                <div class="city-desc">
+                    <h2>Toronto Downtown</h2>
+                    <p>Tronto’s most prominent attraction 
+                        is the CN Tower, the tallest free-standing 
+                        structure in the western hemisphere and it 
+                        now includes EdgeWalk, a thrilling 
+                        hands-free walk around the outside ledge 
+                        of the tower.</p>
+                    <img src="images/toronto2.jpg" alt="Toronto">
+                </div>
+            </div>
+        </section>
+        <section class="city-section">
+            <div class="container city-container">
+                <div class="city-img">
+                    <img src="images/toronto1.jpg" alt="Toronto">
+                </div>
+                <div class="city-desc">
+                    <h2>Toronto Downtown</h2>
+                    <p>Tronto’s most prominent attraction 
+                        is the CN Tower, the tallest free-standing 
+                        structure in the western hemisphere and it 
+                        now includes EdgeWalk, a thrilling 
+                        hands-free walk around the outside ledge 
+                        of the tower.</p>
+                    <img src="images/toronto2.jpg" alt="Toronto">
+                </div>
+            </div>
+        </section>
+        <section class="cathedral-section">
+            <div class="container cathedral-container">
+                <div class="cathedral-content">
+                    <!-- Links for router-->
+                    <div class="form-tabs">
+                        <router-link to="/">Sign Up</router-link>
+                        <router-link to="/update">Update Email</router-link>
+                    </div>
+                    <!-- Router renders below-->
+                    <!-- <router-view></router-view> -->
+                    <form class="cathedral-form" action="index.php" method="POST">
+                        <label>First Name:</label>
+                        <input type='text' name="first_name" id="first_name" required>
+                        <label>Last Name:</label>
+                        <input type='text' name="last_name" id="last_name" required>
+                        <label>Email Adress:</label>
+                        <input type='email' name="email" id="email" required>
+                        <label>Country:</label>
+                        <input type='text' name="country" id="country" required>
+                        <button class="round-button" name="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer-container">
+                <a href="/" class="footer-logo">
+                    <img src="images/logo-white.svg" alt="logo">
+                </a>
+                <p>Ontario Summer © 2020</p>
+            </div>
+        </footer>
     </main>
     <script src="js/main.js" type="module"></script>
 </body>
