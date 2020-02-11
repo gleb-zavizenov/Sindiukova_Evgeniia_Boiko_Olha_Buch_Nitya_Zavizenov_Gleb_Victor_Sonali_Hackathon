@@ -43,7 +43,7 @@ function update_db($first_name,$last_name, $email, $country) {
 
 
     // add redirect back to index.html
-    header('Refresh:5; url=../index.html');
+    header('Refresh:5; url=index.html');
     exit;
        
 
@@ -73,7 +73,7 @@ function update_db($first_name,$last_name, $email, $country) {
         };
 
         // add redirect back to index.html
-        header('Refresh:5; url=../index.html');
+        header('Refresh:5; url=index.html');
         exit;
     } 
 }
