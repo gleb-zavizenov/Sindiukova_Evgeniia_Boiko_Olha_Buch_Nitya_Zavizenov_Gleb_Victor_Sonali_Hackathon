@@ -1,6 +1,6 @@
 # Ontario Tourism project
 
-![Logo](/images/favicon.png)
+![Logo](images/logo-white.svg)
 
 ## Project Description
 
