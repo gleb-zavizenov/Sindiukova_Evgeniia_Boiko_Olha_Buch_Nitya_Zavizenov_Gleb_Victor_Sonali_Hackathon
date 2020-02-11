@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/modules/footer.scss"],"names":[],"mappings":"AAGA,OACI,WACA,YACA,sBACA,WACA,aACA,mBACA,uBAGJ,kBACI,aACA,mBACA,mBACA,8BAEA,oBACI,YAEA,wBACI,YAIR,oBACI","file":"footer.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/modules/footer.scss"],"names":[],"mappings":"AAGA,OACI,WACA,YACA,sBACA,WACA,aACA,mBACA,uBAEA,SACI,YAIR,kBACI,aACA,mBACA,mBACA,8BAEA,oBACI,YAEA,wBACI,YAIR,oBACI,WACA","file":"footer.css"}
