@@ -1,8 +1,5 @@
 <?php
 
-require_once '../load.php';
-
-
 
 function update_db($first_name,$last_name, $email, $country) {
     $pdo = Database::getInstance()->getConnection();
@@ -19,7 +16,7 @@ function update_db($first_name,$last_name, $email, $country) {
 
     if($user_update = $user_set->fetch(PDO::FETCH_ASSOC)){
         $id= $user_update['id'];
-        $update_query = 'UPDATE tbl_subscribers SET email = :email WHERE id = :id';
+        $update_query = 'UPDATE tbl_subscribers SET email = :email, last_update_date = now() WHERE id = :id';
         $update_set = $pdo->prepare($update_query);
         $update_set->execute(
             array(
@@ -36,7 +33,14 @@ function update_db($first_name,$last_name, $email, $country) {
         'From'=>'ontatiosummer@test.ca',
         'Reply-To'=>$first_name . ' ' . $last_name.'<'.$email.'>'
     ];
-    mail($to, $subject, $message, $headers);
+
+    
+    if(mail($to, $subject, $message, $headers)) {
+        echo "I sent you an email";
+    } else{
+        echo "Mail Not Sent";
+      };
+
 
 
        
@@ -60,7 +64,12 @@ function update_db($first_name,$last_name, $email, $country) {
             'From'=>'ontatiosummer@test.ca',
             'Reply-To'=>$first_name . ' ' . $last_name.'<'.$email.'>'
         ];
-        mail($to, $subject, $message, $headers);
+        if(mail($to, $subject, $message, $headers)) {
+            echo "I sent you an email";
+        } else{
+            echo "Mail Not Sent";
+          };
+
     } 
 }
 
@@ -75,32 +84,3 @@ if(isset($_POST['submit'])) {
     } 
 }
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ontario Thing</title>
-</head>
-<body>
-<section id="form">
-<form  action="index.php" method="POST">
-<label>First Name:</label>
-<input type='text' name="first_name" id="first_name">
-<label>Last Name:</label>
-<input type='text' name="last_name" id="last_name">
-<label>Email Adress:</label>
-<input type='email' name="email" id="email">
-<label>Country:</label>
-<input type='text' name="country" id="country">
-<button name="submit">Submit</button>
-</form>
-
-</section>
-
-    
-</body>
-</html>
