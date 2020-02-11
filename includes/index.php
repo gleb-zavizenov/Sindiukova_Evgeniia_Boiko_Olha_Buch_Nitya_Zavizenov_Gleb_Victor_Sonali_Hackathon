@@ -13,7 +13,7 @@ require('admin/sign-up.php')
     <title>Ontario Thing</title>
 </head>
 <body>
-<section id="form">
+<!-- <section id="form">
 <form  action="index.php" method="POST">
 <label>First Name:</label>
 <input type='text' name="first_name" id="first_name">
@@ -26,8 +26,8 @@ require('admin/sign-up.php')
 <button name="submit">Submit</button>
 </form>
 
-</section>
-
+</section> -->
+<h1>Email was sent successfully!</h1>
     
 </body>
 </html>
