@@ -35,6 +35,15 @@
     }
 }
 
+.form-tabs:nth-child(1), .form-tabs:nth-child(2){
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-decoration: none;
+    text-underline-position: none;
+}
+
 .cathedral-form{
     display: flex;
     flex-direction: column;

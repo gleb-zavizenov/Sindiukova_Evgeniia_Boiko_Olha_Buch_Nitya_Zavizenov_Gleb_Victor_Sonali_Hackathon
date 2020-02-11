@@ -1,9 +1,23 @@
+// importing all components
+import SignupComponent from './components/SignupComponent.js';
+import UpdateComponent from './components/UpdateComponent.js';
 
+// these are the same as Express routes -> router.get('/', ...)
+const routes = [
+    { path: '/', name:'signup', component: SignupComponent},
+    { path: '/update', name:'update', component: UpdateComponent}
+]
 
+const router = new VueRouter({
+    routes
+})
 
-
-
-
+const vm = new Vue({
+    el: "#app",
+    data: {},
+    methods: {},
+    router
+})
 
 
 //
