@@ -29,6 +29,10 @@
         font-weight: 400;
         font-family: "Montserrat";
     }
+
+    router-link:active{
+        color: $green;
+    }
 }
 
 .cathedral-form{

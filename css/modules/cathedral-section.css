@@ -1,1 +1,17 @@
-.cathedral-section{margin-top:80px;height:600px;background:url("../images/cathedral.jpg") no-repeat;background-size:cover;background-position:top center}.cathedral-content{display:flex;flex-direction:column;align-items:center}.form-tabs{width:320px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-bottom:60px}.form-tabs router-link{color:#fff;font-size:24px;font-weight:400;font-family:"Montserrat"}.cathedral-form{display:flex;flex-direction:column;align-items:center;width:250px}.cathedral-form label{color:#fff;font-family:"Montserrat";margin-bottom:5px}.cathedral-form input{width:250px;height:30px;border:1px solid #fff;background-color:rgba(0,0,0,.5);margin-bottom:15px;text-align:center;color:#fff}.cathedral-form button{margin-top:20px}/*# sourceMappingURL=cathedral-section.css.map */
+/* Error: Undefined variable.
+ *    ,
+ * 34 |         color: $green;
+ *    |                ^^^^^^
+ *    '
+ *   sass\modules\cathedral-section.scss 34:16  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 34 \2502          color: $green;\d\a    \2502                 ^^^^^^\a    \2575 \a   sass\\modules\\cathedral-section.scss 34:16  root stylesheet";
+}
