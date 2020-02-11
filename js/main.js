@@ -41,3 +41,21 @@ mobileLinks.forEach(link => {
         mobileNav.classList.remove('mobile-nav-open');
     })
 })
+
+// 
+// Video popup
+// 
+let videoTrigger = document.querySelector("#video-btn");
+let videoPopup = document.querySelector('.video-overlay');
+let videoCross = document.querySelector('.video-overlay-cross');
+let promVideo = document.querySelector('.video-overlay-video');
+
+videoTrigger.addEventListener('click', function(){
+    videoPopup.classList.add('video-overlay-show');
+});
+
+videoCross.addEventListener('click', function(){
+    promVideo.pause();
+    promVideo.currentTime = 0;
+    videoPopup.classList.remove('video-overlay-show');
+});

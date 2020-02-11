@@ -12,6 +12,14 @@
 </head>
 <body>
     <main id="app">
+        <div class="video-overlay">
+            <div class="video-overlay-cross">
+                <img src="images/cross.svg" alt="cross">
+            </div>
+            <video controls class="video-overlay-video">
+                <source src="images/promotional-video.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="mobile-nav">
             <div class="mobile-nav-cross">
                 <img src="images/cross.svg" alt="Cross icon">
@@ -44,7 +52,7 @@
                 <div class="hero-content">
                     <h1>Find Yourself At Home</h1>
                     <h3>Ontario Summer</h3>
-                    <a class="round-button" href="#contacts">Learn more</a>
+                    <div class="round-button" id="video-btn">Watch video</div>
                 </div>
             </div>
             <div class="hero-line">
